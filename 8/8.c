@@ -2,7 +2,9 @@
 #include <libc.h>
 
 /*
-The four adjacent digits in the 1000-digit number that have the greatest product are 9 × 9 × 8 × 9 = 5832. 
+The four adjacent digits in the 1000-digit number that have the
+greatest product are 9 × 9 × 8 × 9 = 5832.
+
 73167176531330624919225119674426574742355349194934 
 96983520312774506326239578318016984801869478851843 
 85861560789112949495459501737958331952853208805511 
@@ -24,8 +26,8 @@ The four adjacent digits in the 1000-digit number that have the greatest product
 05886116467109405077541002256983155200055935729725 
 71636269561882670428252483600823257530420752963450
 
-Find the thirteen adjacent digits in the 1000-digit number that have
-the greatest product. What is the value of this product? 
+Find the thirteen adjacent digits in the 1000-digit number that
+have the greatest product. What is the value of this product? 
 */
 
 int
@@ -64,10 +66,8 @@ main()
 	for(int i = 0; i<1000-13; i++){
 		cursorsum = 1;
 		for(int d = 0; d<13; ++d){
-			print("%d x ", intvalue(number[i+d]));
 			cursorsum *= intvalue(number[i+d]);
 		}
-		print(" = %lld\n", cursorsum);
 		if(cursorsum > largest){
 			largest = cursorsum;
 		}
