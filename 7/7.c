@@ -27,13 +27,14 @@ isprime(u64int prime)
 	return isprime;
 }
 
-void main()
+void
+main()
 {
 	int found = 0;
 	int iterate = 2;
 	int prime = 2;
 
-	while(found<10002){
+	while(found < 10002){
 		if(isprime(iterate)){
 			prime = iterate;
 			found++;
