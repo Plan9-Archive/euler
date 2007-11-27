@@ -1,0 +1,7 @@
+</$objtype/mkfile
+
+TARG=1
+OFILES=\
+	7.$O\
+
+</sys/src/cmd/mkone
