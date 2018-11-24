@@ -37,7 +37,6 @@ main()
 		if(isprime(iterate)){
 			prime = iterate;
 			sum += prime;
-			print("Adding: %d\n", prime);
 		}
 		iterate++;
 	}
