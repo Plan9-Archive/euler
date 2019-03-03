@@ -1,0 +1,7 @@
+</$objtype/mkfile
+
+TARG=1
+OFILES=\
+	12.$O\
+
+</sys/src/cmd/mkone
