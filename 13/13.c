@@ -230,7 +230,6 @@ main()
 	for(column=49;column>-1;column--){
 		sum = 0;
 		for(row = 0; row<100; row++){
-			//print("%s", number[row][column]);
 			sum += intvalue(number[row][column]);
 		}
 		sum += carry;
