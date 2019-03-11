@@ -240,14 +240,15 @@ main()
 			largenum[location] = sum;
 		}else{
 			largenum[location] = lastdigit;
+			location--;
 		}
-		location--;
 	}
 
 	print("Large number: ");
-	for(location=0;location<100;location++){
+	for(location=location;location<100;location++){
 		print("%lld", largenum[location]);
 	}
+	print("\n");
 
 	exits(0);
 }
