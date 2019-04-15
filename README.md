@@ -6,6 +6,6 @@ I have written these using the [9front](http://9front.org/) operating system, bu
 
 The original math problem's wording is on the top of each `.c` file as a comment.
 
-I abuse `u64int` where it is not needed because I'm not very concerned with picking optimal data types for numbers in such small programs.
+I abuse unsigned 64-bit integers where they are not needed because I'm not very concerned with picking optimal data types for numbers in such small programs.
 
 Running `mk` in each directory should compile an executable which determines the problem's answer. I usually test the answer's speed using the `time` command on the resulting executable.
